@@ -2,9 +2,9 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen)
 ![License](https://img.shields.io/badge/License-ISC-blue)
 
-# ShopHub — Full-Stack E-Commerce Application
+# SmartMart — Full-Stack E-Commerce Application
 
-A full-stack e-commerce platform with user authentication, admin dashboard, product catalog, and order management. Built with Node.js, Express, MongoDB, and React.
+A full-stack e-commerce platform with user authentication, admin dashboard, accessory catalog, and order management. Built with Node.js(ES6), Express, MongoDB, and React.
 
 ---
 
@@ -23,7 +23,7 @@ A full-stack e-commerce platform with user authentication, admin dashboard, prod
 ## Features
 
 ### Customer
-- Browse products (Cars, Electronics, Clothing)
+- Browse accessories (Phone Accessories, Chargers, Cases)
 - Filter by category
 - Add items to cart
 - Sign up / Login
@@ -40,6 +40,18 @@ A full-stack e-commerce platform with user authentication, admin dashboard, prod
 - JWT authentication
 - Role-based access (admin / user)
 - CORS enabled
+
+---
+
+## Project Overview
+
+SmartMart is a purpose-built e-commerce application focused on accessories, electronics, and clothing. It was created as a full-stack demo application using modern JavaScript tooling and follows a modular structure for easy extension.
+
+- **Accessories-first catalog:** the app exposes accessory-focused endpoints and UI components to browse and manage accessory products alongside electronics and clothing.
+- **Seeded demo data:** `server/script/productSeed.js` seeds 9 curated products (3 per category: electronics, clothing, accessories) for local testing.
+- **Robust image handling:** some external image sources can be unreachable; the seed includes globally reachable placeholder images by default so UI always displays product imagery. To use your own images, edit `server/script/productSeed.js` and re-run `npm run seed:products`.
+- **API routes:** accessory and product routes are available under the server API (e.g. `/api/accessories`, `/api/products`) and follow RESTful conventions.
+
 
 ---
 
@@ -97,7 +109,7 @@ ecommerce/
 │       ├── modules/
 │       │   ├── products/            # Products & orders
 │       │   ├── users/               # Auth & admin
-│       │   └── cars/
+│       │   └── accessories/
 │       ├── utils/
 │       └── index.js
 │
@@ -114,36 +126,39 @@ ecommerce/
 ![Login Page](screenshots/login-page.png)
 
 **Sign Up Page**  
-![SignUp Page](screenshots/signup-page.png)
+![SignUp Page](screenshots/signUp%20-%20page.png)
 
-**Validation Page (Email & Password)**  
-![Validation Page](screenshots/validation-page.png)
+**Sign Up Validation Page (Email & Password)**  
+![Validation Page](screenshots/signup-validation.png)
+
+**Login Validation Page (Email & Password)**  
+![Validation Page](screenshots/login-validation-page.png)
 
 **Products Page**  
 ![Products Page](screenshots/products-page.png)
 
 **Categorized Products**  
-![Categorized Products](screenshots/categorized-products.png)
+![Categorized Products](screenshots/categorized-page.png)
 
 **Add to Cart**  
 ![Add To Cart](screenshots/add-to-cart-page.png)
 
 **Cart Overview**  
-![Cart Page](screenshots/cart-products-page.png)
+![Cart Page](screenshots/cart-page.png)
 
 **Checkout Attempt Without Login**  
-![Checkout Failure](screenshots/failure-without-login-page.png)
+![Checkout Failure](screenshots/login-to-checkout-page.png)
 
 **Order Checkout Successful**  
-![Order Checkout](screenshots/correct-checkout-page.png)
+![Order Checkout](screenshots/checkOut-success-page.png)
 
 ### Admin Pages
 
 **Users Dashboard**  
-![Users Dashboard](screenshots/adminUsersDashBoard.png)
+![Users Dashboard](screenshots/admin-users-dashboard.png)
 
 **Orders Dashboard**  
-![Orders Dashboard](screenshots/adminOrdersDashBoard.png)
+![Orders Dashboard](screenshots//admin-orders-dashboard.png)
 
 
 ## Getting Started
@@ -156,8 +171,8 @@ ecommerce/
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/shophub.git
-cd shophub
+git clone https://github.com/YOUR_USERNAME/smartmart.git
+cd smartmart
 ```
 
 ### 2. Backend setup
@@ -261,11 +276,11 @@ Frontend runs at `http://localhost:3000`
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: ShopHub e-commerce"
+   git commit -m "Initial commit: SmartMart e-commerce"
    ```
 4. Add remote and push:
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/shophub.git
+   git remote add origin https://github.com/YOUR_USERNAME/smartmart.git
    git branch -M main
    git push -u origin main
    ```

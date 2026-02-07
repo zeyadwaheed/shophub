@@ -6,7 +6,7 @@ const Header = ({ cartCount, onCartClick, user, onLoginClick, onLogoutClick, onL
     <header className="header">
       <div className="header-container">
         <div className="logo" onClick={onLogoClick} style={{ cursor: 'pointer' }}>
-          <h1>🛒 ShopHub</h1>
+          <h1>🛍️ SmartMart</h1>
           <p className="tagline">Your One-Stop E-Commerce Store</p>
         </div>
         <div className="header-right">

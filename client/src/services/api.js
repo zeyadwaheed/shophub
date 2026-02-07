@@ -7,53 +7,53 @@ const getAuthHeaders = () => {
   return token ? { Authorization: `Bearer ${token}` } : {};
 };
 
-export const carAPI = {
-  getAllCars: async () => {
+export const accessoryAPI = {
+  getAllAccessories: async () => {
     try {
       const response = await axios.get(`${API_BASE_URL}/products`);
       return response.data.data;
     } catch (error) {
-      console.error('Error fetching products:', error);
+      console.error('Error fetching accessories:', error);
       throw error;
     }
   },
 
-  getCarById: async (id) => {
+  getAccessoryById: async (id) => {
     try {
       const response = await axios.get(`${API_BASE_URL}/products/${id}`);
       return response.data.data;
     } catch (error) {
-      console.error('Error fetching product:', error);
+      console.error('Error fetching accessory:', error);
       throw error;
     }
   },
 
-  createCar: async (carData) => {
+  createAccessory: async (accessoryData) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/products`, carData);
+      const response = await axios.post(`${API_BASE_URL}/products`, accessoryData);
       return response.data.data;
     } catch (error) {
-      console.error('Error creating product:', error);
+      console.error('Error creating accessory:', error);
       throw error;
     }
   },
 
-  updateCar: async (id, carData) => {
+  updateAccessory: async (id, accessoryData) => {
     try {
-      const response = await axios.put(`${API_BASE_URL}/products/${id}`, carData);
+      const response = await axios.put(`${API_BASE_URL}/products/${id}`, accessoryData);
       return response.data.data;
     } catch (error) {
-      console.error('Error updating product:', error);
+      console.error('Error updating accessory:', error);
       throw error;
     }
   },
 
-  deleteCar: async (id) => {
+  deleteAccessory: async (id) => {
     try {
       const response = await axios.delete(`${API_BASE_URL}/products/${id}`);
       return response.data;
     } catch (error) {
-      console.error('Error deleting product:', error);
+      console.error('Error deleting accessory:', error);
       throw error;
     }
   },

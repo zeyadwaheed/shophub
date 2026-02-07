@@ -12,11 +12,11 @@ import { auth } from '../../../middleware/auth.js';
 
 const router = express.Router();
 
-// ✅ PUBLIC ROUTES
+// PUBLIC ROUTES
 router.get('/', getAllProducts);
 router.get('/:id', getProductByIdController);
 
-// 🔐 PROTECTED ROUTES (auth parses JWT and sets req.userId)
+// PROTECTED ROUTES (auth parses JWT and sets req.userId)
 router.post('/', auth, createProduct);
 router.put('/:id', auth, updateProductController);
 router.delete('/:id', auth, deleteProductController);

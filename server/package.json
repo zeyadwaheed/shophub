@@ -1,7 +1,7 @@
 {
-  "name": "ecommerce-server",
+  "name": "smartmart-server",
   "version": "1.0.0",
-  "description": "E-commerce API for car products",
+  "description": "E-commerce API for accessory products",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
@@ -12,8 +12,8 @@
   },
   "keywords": [
     "ecommerce",
-    "cars",
-    "api"
+    "accessories",
+    "smartmart"
   ],
   "author": "",
   "license": "ISC",

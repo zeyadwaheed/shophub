@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './database/mongoConnection.js';
 import productRoutes from './modules/products/routes/productRoutes.js';
-import carRoutes from './modules/cars/routes/carRoutes.js';
+import accessoryRoutes from './modules/accessories/routes/accessoryRoutes.js';
 import userRoutes from './modules/users/routes/userRoutes.js';
 import globalErrorHandler, { notFound } from './middleware/errorHandler.js';
 
@@ -26,7 +26,7 @@ app.get('/health', (req, res) => {
 
 // API routes
 app.use('/api/products', productRoutes);
-app.use('/api/cars', carRoutes);
+app.use('/api/accessories', accessoryRoutes);
 app.use('/api/auth', userRoutes);
 
 // 404 handler -> global error handler

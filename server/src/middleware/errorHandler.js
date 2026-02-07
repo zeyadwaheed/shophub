@@ -4,20 +4,23 @@ import AppError from '../utils/appError.js';
 const globalErrorHandler = (err, req, res, next) => {
   console.error('GLOBAL_ERROR_HANDLER:', err);
 
+  // Joi validation error
+  if (err.isJoi) {
+    return res.status(400).json({
+      status: 'fail',
+      message: err.details[0].message
+    });
+  }
+
   const statusCode = err.statusCode || 500;
   const status = err.status || 'error';
 
-  const response = {
+  res.status(statusCode).json({
     status,
     message: err.message || 'Something went wrong'
-  };
-
-  if (process.env.NODE_ENV === 'development') {
-    response.stack = err.stack;
-  }
-
-  res.status(statusCode).json(response);
+  });
 };
+
 
 // 404 handler that forwards to global error handler
 export const notFound = (req, res, next) => {

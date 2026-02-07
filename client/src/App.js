@@ -4,7 +4,7 @@ import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import AuthForm from './components/AuthForm';
 import AdminDashboard from './components/AdminDashboard';
-import { carAPI } from './services/api';
+import { accessoryAPI } from './services/api';
 import { authAPI } from './services/authAPI';
 import './App.css';
 
@@ -53,10 +53,10 @@ function App() {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const data = await carAPI.getAllCars();
+      const data = await accessoryAPI.getAllAccessories();
       setProducts(data);
     } catch (error) {
-      setMessage('Failed to load products');
+      setMessage('Failed to load accessories');
       console.error(error);
     } finally {
       setLoading(false);
@@ -97,7 +97,7 @@ function App() {
 
     try {
       for (const item of cartItems) {
-        await carAPI.createOrder({
+        await accessoryAPI.createOrder({
           productId: item.product.id,
           quantity: item.quantity
         });
@@ -178,10 +178,10 @@ function App() {
                 All Products
               </button>
               <button 
-                className={`category-btn ${selectedCategory === 'car' ? 'active' : ''}`}
-                onClick={() => setSelectedCategory('car')}
+                className={`category-btn ${selectedCategory === 'accessory' ? 'active' : ''}`}
+                onClick={() => setSelectedCategory('accessory')}
               >
-                🚗 Cars
+                🎧 Accessories
               </button>
               <button 
                 className={`category-btn ${selectedCategory === 'electronics' ? 'active' : ''}`}

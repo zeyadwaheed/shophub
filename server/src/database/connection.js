@@ -43,22 +43,22 @@ export const deleteProduct = async (id) => {
   return toProductResponse(doc);
 };
 
-// Car helpers (same collection, filter by category)
-export const getCars = async () => {
-  const docs = await Product.find({ category: 'car' }).lean();
+// Accessory helpers (same collection, filter by category)
+export const getAccessories = async () => {
+  const docs = await Product.find({ category: 'accessory' }).lean();
   return docs.map((d) => ({ ...d, id: d._id.toString() }));
 };
 
-export const getCarById = async (id) => {
-  const doc = await Product.findOne({ _id: id, category: 'car' });
+export const getAccessoryById = async (id) => {
+  const doc = await Product.findOne({ _id: id, category: 'accessory' });
   return toProductResponse(doc);
 };
 
-export const addCar = async (car) => addProduct({ ...car, category: 'car' });
+export const addAccessory = async (accessory) => addProduct({ ...accessory, category: 'accessory' });
 
-export const updateCar = async (id, updates) => updateProduct(id, updates);
+export const updateAccessory = async (id, updates) => updateProduct(id, updates);
 
-export const deleteCar = async (id) => deleteProduct(id);
+export const deleteAccessory = async (id) => deleteProduct(id);
 
 // Orders
 export const addOrder = async (order) => {

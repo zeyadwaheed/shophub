@@ -8,12 +8,18 @@ import AppError from '../utils/appError.js';
 
 const validation = (schema) => {
   return (req, res, next) => {
-    const { error } = schema.validate(req.body, { abortEarly: false });
+    const { error, value } = schema.validate(req.body, {
+      abortEarly: true,     // first error only
+      stripUnknown: true   // remove extra fields
+    });
+
     if (error) {
-      const err = new AppError('Validation error', 400);
-      err.details = error.details;
-      return next(err);
+      return next(
+        new AppError(error.details[0].message, 400)
+      );
     }
+
+    req.body = value;
     next();
   };
 };
