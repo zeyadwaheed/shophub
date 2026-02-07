@@ -109,10 +109,11 @@ ecommerce/
 ## Screenshots
 
 ### Customer Pages
-
+---
 **Login Page**  
 ![Login Page](screenshots/login-page.png)
 
+---
 **Sign Up Page**  
 ![SignUp Page](screenshots/signup-page.png)
 
