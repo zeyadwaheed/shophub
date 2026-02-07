@@ -145,12 +145,18 @@ ecommerce/
 ![Login Page](screenshots/login-page.png)
 ---
 **Sign Up Page**  
+---
+
 ![SignUp Page](screenshots/signUp%20-%20page.png)
 ---
-**Sign Up Validation Page (Email & Password)**  
+**Sign Up Validation Page (Email & Password)** 
+---
+
 ![Validation Page](screenshots/signup-validation.png)
 ---
 **Login Validation Page (Email & Password)**  
+---
+
 ![Validation Page](screenshots/login-validation-page.png)
 ---
 **Products Page**  
@@ -158,6 +164,8 @@ ecommerce/
 ![Products Page](screenshots/products-page.png)
 ---
 **Categorized Products**  
+---
+
 ![Categorized Products](screenshots/categorized-page.png)
 ---
 **Add to Cart**  
