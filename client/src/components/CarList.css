@@ -1,0 +1,27 @@
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.loading,
+.no-cars {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .car-list {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .car-list {
+    grid-template-columns: 1fr;
+  }
+}

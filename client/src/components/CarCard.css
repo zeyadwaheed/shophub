@@ -1,0 +1,91 @@
+.car-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.car-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 15px;
+}
+
+.car-info h2 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.brand {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.description {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.4;
+  min-height: 38px;
+}
+
+.car-details {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.car-details span {
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.price {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.add-to-cart-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background: #2980b9;
+}

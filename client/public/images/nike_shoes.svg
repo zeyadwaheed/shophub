@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#F5F5F5" width="400" height="300" rx="8"/>
+  <path d="M60 170 Q80 140 120 130 L280 130 Q320 140 340 170 L320 200 Q280 220 200 225 Q120 220 80 200 Z" fill="#FFF" stroke="#DDD" stroke-width="2"/>
+  <rect x="140" y="135" width="120" height="15" fill="#FF6B35" rx="8"/>
+  <text x="200" y="150" font-size="12" fill="#fff" text-anchor="middle">NIKE</text>
+  <ellipse cx="110" cy="200" rx="20" ry="15" fill="#555"/>
+  <ellipse cx="290" cy="200" rx="20" ry="15" fill="#555"/>
+</svg>
