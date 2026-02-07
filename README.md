@@ -111,39 +111,50 @@ ecommerce/
 ### Customer Pages
 ---
 **Login Page**  
+---
 ![Login Page](screenshots/login-page.png)
 
 ---
-**Sign Up Page**  
+**Sign Up Page** 
+---
 ![SignUp Page](screenshots/signup-page.png)
 
 **Validation Page (Email & Password)**  
+---
 ![Validation Page](screenshots/validation-page.png)
 
 **Products Page**  
+---
 ![Products Page](screenshots/products-page.png)
 
-**Categorized Products**  
+**Categorized Products**
+---
 ![Categorized Products](screenshots/categorized-products.png)
 
 **Add to Cart**  
+---
 ![Add To Cart](screenshots/add-to-cart-page.png)
 
 **Cart Overview**  
+---
 ![Cart Page](screenshots/cart-products-page.png)
 
 **Checkout Attempt Without Login**  
+---
 ![Checkout Failure](screenshots/failure-without-login-page.png)
 
 **Order Checkout Successful**  
+---
 ![Order Checkout](screenshots/correct-checkout-page.png)
 
 ### Admin Pages
 
 **Users Dashboard**  
+---
 ![Users Dashboard](screenshots/adminUsersDashBoard.png)
 
-**Orders Dashboard**  
+**Orders Dashboard** 
+---
 ![Orders Dashboard](screenshots/adminOrdersDashBoard.png)
 
 
