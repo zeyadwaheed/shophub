@@ -301,12 +301,17 @@ Serve the `build` folder via any static host (Vercel, Netlify, etc.).
 - Use a strong `SECRET_KEY`
 
 ---
+---
 
-## License
+## Future Improvements
 
-ISC
+- **Wishlist / Favorites** – Allow users to save products for later.  
+- **Payment Gateway Integration** – Stripe, PayPal, etc.  
+- **Product Reviews & Ratings** – Customer feedback system.  
+- **Mobile Optimization / PWA** – Fully responsive, installable app.
 
 ---
+
 
 ## Author
 
